@@ -1,0 +1,137 @@
+/*
+Theme Name:   Accelerate Theme Child
+Theme URI:    http://example.com/accelerate-theme-child/
+Description:  Accelerate Child Theme - Accelerate
+Author:   	Your Name!
+Author URI:   http://example.com
+Template: 	accelerate-theme
+Version:      2.0.0
+Tags:     	light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+Text Domain:  accelerate-theme-child
+*/
+
+/* HOMEPAGE BODY STYLES */
+
+.home-page {
+    background: url("img/taxi-photo.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
+}
+
+#masthead {
+	background: none repeat scroll 0 0 #45ac9d;
+  }
+
+.button {
+	background: none repeat scroll 0 0 #45ac9d;
+}
+
+.site-content h4 {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.individual-featured-work {
+	display: inline-block;
+	max-width: 33%;
+	padding: 15px;
+	text-align: center;
+}
+
+.individual-featured-work h3 {
+	font-size: 80%;
+}
+
+.homepage-featured-work li {
+	list-style-type: none;
+}
+
+.blog-post {
+	width: 50%;
+	float: left;
+	margin-bottom: 2em;
+}
+
+.blog-post h4 {
+  font: 700 1em/1.75 'Montserrat', 'Open Sans', Arial, sans-serif;
+  color: #a6a6a6;
+  text-align: left;
+  text-transform: uppercase;
+  margin: 2em 0 .5em;
+}
+
+.blog-post h3 {
+	font-size: 1.5em;
+}
+
+.read-more-link {
+	font-family: 'Montserrat';
+	font-weight: 700;
+	color: #45ac9d;
+	text-transform: uppercase;
+}
+
+/* FOOTER NAV BAR */
+
+#menu-social-media-nav {
+	list-style-type: none;
+}
+
+.menu-social-media-nav-container li {
+	float: left;
+	padding: 14px 5px;
+}
+
+/* CASE STUDY PAGES */
+
+.case-study-sidebar {
+	float: left;
+	max-width: 40%;	
+	margin-top: 50px;
+}
+
+.case-study-images {
+	float: right;
+	max-width: 45%;
+	padding-top: 50px;
+}
+
+div.case-study-images img {
+	width: 514px;
+	height: auto;
+}
+
+.case-study aside {
+	height: 325px;
+}
+
+.case-study-sidebar strong a {
+	color: #45ac9d;
+	text-transform: uppercase;
+}
+
+.case-study-sidebar h6 {
+	font-size: 12px;
+	margin-top: -15px; 
+	font-weight: lighter;
+}
+
+/* CONTACT PAGE */
+
+.button-submit {
+	position: relative;
+	margin-left: auto;
+	right: 0;
+	width: 16%;
+	color: white; 
+	background-color: #45ac9d;
+	border: 0 none;
+	padding: 15px;
+}
+
+.main-content p {
+	max-width: 70%;
+	float: left;
+}
+
+.wdform-required {
+	display: none;
+}
