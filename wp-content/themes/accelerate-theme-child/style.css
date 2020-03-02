@@ -135,3 +135,84 @@ div.case-study-images img {
 .wdform-required {
 	display: none;
 }
+
+/* ABOUT PAGE */
+
+.about-content p {
+	color: white;
+	text-align: center;
+	font-size: x-large;
+}
+
+.services-header h3 {
+	text-align: center;
+	font-size: large;
+	text-transform: uppercase;
+}
+
+.services-header h4 {
+	text-align: center;
+	font-size: medium;
+}
+
+.specific-services ul {
+	list-style-type: none;
+}
+
+.specific-services h2, h5 {
+	font-size: 20px;
+	text-transform: initial;
+}
+
+.specific-services h5 {
+	font-weight: normal;
+}
+
+.text {
+	width: 1200px;
+	padding: 80px;
+}
+
+.service {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.service:nth-child(even) {
+	flex-direction: row-reverse;
+}
+
+.contact-us {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: baseline;
+}
+
+.contact-us h2 {
+	text-align: center;
+}
+
+.contact-us a {
+	margin-left: 50px;
+}
+
+/* 404 PAGE */
+
+.center-content {
+	text-align: center;
+}
+
+.center-content h2 {
+	font-family: 'Titillium Web', cursive;
+}
+
+.center-content h6 {
+	margin-top: -30px;
+	font-family: 'Titillium Web', cursive;
+}
+
+.center-content a {
+	margin-top: 100px;
+}

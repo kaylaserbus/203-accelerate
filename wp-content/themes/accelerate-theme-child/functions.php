@@ -14,6 +14,7 @@
 function accelerate_child_scripts(){
 	wp_enqueue_style( 'accelerate-style', get_template_directory_uri() . '/style.css' );
 	wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array( 'accelerate-style' ));
+    wp_enqueue_style( 'accelerate-child-google-fonts', 'https://fonts.googleapis.com/css?family=Titillium+Web:400,700&' );
 }
 add_action( 'wp_enqueue_scripts', 'accelerate_child_scripts' );
 
@@ -36,8 +37,8 @@ function create_custom_post_types() {
     register_post_type( 'accelerate_services',
     array(
         'labels' => array (
-            'name' => _( 'Services' ),
-            'singular_name' => _( 'Service' ),
+            'name' => __( 'Services' ),
+            'singular_name' => __( 'Service' ),
         ),
         'public' => true,
         'has_archive' => true,

@@ -10,10 +10,10 @@
 get_header(); ?>
 
 <div id="primary" class="home-page hero-content">
-	<div class="main-content" role="main">
+	<div class="about-content">
 		<?php while ( have_posts() ) : the_post(); ?>
 			<?php the_content(); ?>
-			<p>Accelerate is a strategy and marketing agency located in the heart of NYC. Our goal is to build businesses by making our clients visble and making their customers smile.</p>
+			<p>Accelerate is a strategy and marketing agency<br> located in the heart of NYC. Our goal is to build<br> businesses by making our clients visble and<br> making their customers smile.</p>
 		<?php endwhile; // end of the loop. ?>
 	</div><!-- .main-content -->
 </div><!-- #primary -->
@@ -31,14 +31,19 @@ get_header(); ?>
 			$query = new WP_Query($args);
 
 			while($query->have_posts()) : $query->the_post();
-				$size = "medium";
-				$service = get_field('service');
-				$description = get_field('description');
-				$image = get_field('image');
+				$service = get_field('service_name');
+				$description = get_field('services_description');
+				$image = get_field('services_image');
 		?>
-		<h2><?php echo $service ?></h2>
-		<h5><?php echo $description ?></h5>
-		<?php echo wp_get_attachment_image( $image, $size ); ?>
+		<div class ="service">
+			<div class="image">
+				<?php echo wp_get_attachment_image( $image ); ?>
+			</div>
+			<div class="text">
+				<h2><?php echo $service ?></h2>
+				<h5><?php echo $description ?></h5>
+			</div>
+		</div>
 		<?php endwhile; // end of the loop. ?>
 		<?php wp_reset_query(); ?>
 	</div>
